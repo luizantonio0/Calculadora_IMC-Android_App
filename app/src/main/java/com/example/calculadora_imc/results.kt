@@ -33,13 +33,13 @@ class results : AppCompatActivity() {
         println(imc)
 
         when(imc){
-            in 0.0..15.0 -> outputView.text = resultSet["15"]
-            in 15.1..16.0 -> outputView.text = resultSet["16"]
-            in 16.1..18.5 -> outputView.text = resultSet["18,5"]
-            in 18.6..25.0 -> outputView.text = resultSet["25"]
-            in 25.1..30.0 -> outputView.text = resultSet["30"]
-            in 30.1..35.0 -> outputView.text = resultSet["35"]
-            in 35.1..40.0 -> outputView.text = resultSet["40"]
+            in 0.0..15.0 -> outputView.text = "almost unalive"
+            in 15.1..16.0 -> outputView.text = resultSet["15"]
+            in 16.1..18.5 -> outputView.text = resultSet["16"]
+            in 18.6..25.0 -> outputView.text = resultSet["18,5"]
+            in 25.1..30.0 -> outputView.text = resultSet["25"]
+            in 30.1..35.0 -> outputView.text = resultSet["30"]
+            in 35.1..40.0 -> outputView.text = resultSet["35"]
             else -> outputView.text = "Super Obesity"
         }
 
